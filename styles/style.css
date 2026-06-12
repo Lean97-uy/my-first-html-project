@@ -1,36 +1,98 @@
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
-    background-color:antiquewhite;
-    }
-    
-    
-    header, footer {
-    background-color: #333;
-    color: #fff;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f1e5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #0099ff, #0066cc);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+header p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+header img {
+    width: 80%;
+    max-width: 700px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* CONTENIDO */
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
     padding: 20px;
-    text-align: left;
-    }
-    
-    ul, ol {
-        font-family:'Times New Roman', Times, serif ;
-        font-weight: bold;
-        font-size: larger;
-    }
-    
-    h1, h2 {
-    color: #ffffff;
-    }
-    
-    img {
-        width: 200px;
-        height: auto;
+}
+
+main h2 {
+    text-align: center;
+    color: #0066cc;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* TARJETAS */
+
+.card {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #0099ff;
+    margin-bottom: 15px;
+}
+
+ol li,
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
     }
 
-    li {
-        margin: 3px;
-        color:black;
+    header img {
+        width: 95%;
     }
+
+    main {
+        padding: 10px;
+    }
+}
